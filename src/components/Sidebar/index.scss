@@ -67,11 +67,12 @@
         width: 100%;
         text-align: center;
         opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
       }
 
       &:first-child {
-        &::after {
+        &:after {
           content: 'HOME';
         }
       }
@@ -113,7 +114,7 @@
         font-size: 15px;
         line-height: 16px;
 
-        &:hover svg {
+        &:hover {
           color: #ffd700;
         }
       }

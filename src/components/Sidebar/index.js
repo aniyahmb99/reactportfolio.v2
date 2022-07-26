@@ -1,60 +1,56 @@
-import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { Link, NavLink } from 'react-router-dom'
 
-const Sidebar = () => (
-  <div className="nav-bar">
-    <Link className="logo" to="/">
-      <img src={LogoS} alt="logo" />
-      <img className="sub-logo" src={LogoSubtitle} alt="logo subtitile" />
-    </Link>
+const Sidebar = () => {
+  return (
+    <div className="nav-bar">
+      <Link className="logo" to="/">
+        <img src={LogoS} alt="logo" />
+        <img className="sub-logo" src={LogoSubtitle} alt="logo subtitile" />
+      </Link>
 
-    <nav>
-      <NavLink exact="true" activeclassname="active" to="/">
-        <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-      </NavLink>
-      <NavLink
-        exact="true"
-        activeclassname="active"
-        className="about-link"
-        to="/about"
-      >
-        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-      </NavLink>
-      <NavLink
-        exact="true"
-        activeclassname="active"
-        className="contact-link"
-        to="/contact"
-      >
-        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-      </NavLink>
-    </nav>
-    <ul>
-      <li>
-        <a
-          target="_blank"
-          rel="norefferer"
-          href="https://www.linkedin.com/in/aniyah-butler-033596223"
+      <nav>
+        <NavLink exact="true" activeclassname="active" to="/">
+          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        </NavLink>
+        <NavLink activeclassname="active" className="about-link" to="/about">
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          activeclassname="active"
+          className="contact-link"
+          to="/contact"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-        </a>
-      </li>
-      <li>
-        <a
-          target="_blank"
-          rel="norefferer"
-          href="https://github.com/aniyahmb99"
-        >
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-        </a>
-      </li>
-    </ul>
-  </div>
-)
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </NavLink>
+      </nav>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/aniyah-butler-033596223"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/aniyahmb99"
+          >
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  )
+}
 
 export default Sidebar
