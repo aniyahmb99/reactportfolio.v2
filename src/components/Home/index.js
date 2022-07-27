@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 // import Loader from 'react-loaders'
 import LogoTitle from '../../assets/images/logo-s.png'
-// import Logo from './Logo'
+import Logo from './Logo/index'
 import AnimatedLetters from '../AnimatedLetters/index'
 import './index.scss'
 
@@ -60,6 +60,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
+        <Logo />
       </div>
     </>
   )
