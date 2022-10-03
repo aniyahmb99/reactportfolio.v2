@@ -1,17 +1,13 @@
 import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, Fragment } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
-// let MY_PUBLIC_KEY = process.env.MY_PUBLIC_KEY
-// let MY_SERVICE_ID = process.env.MY_SERVICE_ID
-// let MY_TEMPLATE_ID = process.env.MY_TEMPLATE_ID
-
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const refForm = useRef()
+  const form = useRef()
 
   useEffect(() => {
     return setTimeout(() => {
@@ -20,10 +16,22 @@ const Contact = () => {
   }, [])
 
   const sendEmail = (e) => {
+    let MY_PUBLIC_KEY = process.env.MY_PUBLIC_KEY
+    let MY_SERVICE_ID = process.env.MY_SERVICE_ID
+    let MY_TEMPLATE_ID = process.env.MY_TEMPLATE_ID
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_swydckq', refForm.current, 'your token')
+      .sendForm(
+        'service_kr3408i',
+        'template_swydckq',
+        form.current,
+        'R0s-DY7OWbUwvrvE0'
+        // `${MY_SERVICE_ID}`,
+        // `${MY_TEMPLATE_ID}`,
+        // form.current,
+        // `${MY_PUBLIC_KEY}`
+      )
       .then(
         () => {
           alert('Message sent successfully!')
@@ -36,7 +44,7 @@ const Contact = () => {
   }
 
   return (
-    <>
+    <Fragment>
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
@@ -46,14 +54,14 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p className="p-text">
             I am interested in full-time employment at an established or startup
             tech company where the opportunities for continuous learning and
             growth are exciting and consistent. Please feel free to contact me
             using the form below.
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
@@ -89,22 +97,25 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Aniyah Butler <br />
-          Ohio, US <br />
-          E Green Drive Athens, OH 45701 <br />
+          Aniyah Butler,
+          <br />
+          Columbus, Ohio, <br />
+          US 43229 <br />
           <span>aniyah_mb@yahoo.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[39.32538, 82.09703]} zoom={13}>
+          <MapContainer center={[39.983334, -82.98333]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[39.32538, 82.09703]}>
-              <Popup>Aniyah lives here, come over for a cup of coffee!</Popup>
+            <Marker position={[39.983334, -82.98333]}>
+              <Popup className="popup">
+                Aniyah lives here, come over for a cup of coffee!
+              </Popup>
             </Marker>
           </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
-    </>
+    </Fragment>
   )
 }
 

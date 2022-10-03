@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom'
-import Sidebar from '../Sidebar/index'
+import Sidebar from '../Sidebar'
 import './index.scss'
+
+// find out why home component is not being rendered (this component has the "Hi, I'm Aniyah, web developer" text with the animated letter component being used inside)
 
 const Layout = () => {
   return (

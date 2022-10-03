@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faNode,
+  faAngular,
+  faVuejs,
   faCss3,
-  faHtml5,
-  faJsSquare,
   faReact,
+  faJsSquare,
   faGitAlt,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
@@ -22,7 +22,7 @@ const About = () => {
   }, [])
 
   return (
-    <>
+    <Fragment>
       <div className="container about-page">
         <div className="text-zone">
           <h1>
@@ -32,17 +32,17 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p className="p-text">
             I'm a very goal-driven and ambitious Frontend Developer looking for
             a role at the right company with the opportunity to work with the
             latest and greatest technologies and to continue my learning journey
             in coding.
           </p>
-          <p align="LEFT">
+          <p className="p-text" align="LEFT">
             I'm naturally curious, confident in my skills, and always working on
             the next project to hone and advance my skillset.
           </p>
-          <p>
+          <p className="p-text">
             If I need to define myself in one sentence that would be a
             free-spirited, strongly opinionated, tech obsessed, and family
             oriented person who has developed a deep appreciation and excitement
@@ -52,10 +52,10 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faNode} color="#89B03F" />
+              <FontAwesomeIcon icon={faAngular} color="#C94C36" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+              <FontAwesomeIcon icon={faVuejs} color="#58A174" />
             </div>
             <div className="face3">
               <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
@@ -73,7 +73,7 @@ const About = () => {
         </div>
       </div>
       <Loader type="pacman" />
-    </>
+    </Fragment>
   )
 }
 

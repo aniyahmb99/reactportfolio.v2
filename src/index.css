@@ -8,12 +8,13 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #022c43;
+  background-color: #210c49;
   overflow: hidden;
   display: block;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
+}
