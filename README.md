@@ -27,7 +27,7 @@ User can visit this page either on their computer or phone and can navigate the 
 
 
 ## Technologies
-HTML, CSS, REACT.JS
+HTML, SASS, REACT.JS
 
 
 ## Screenshots
