@@ -1,5 +1,9 @@
 # REACT PORTFOLIO V2.0
 
+## Screenshots
+
+Home Page
+![image](https://user-images.githubusercontent.com/96402809/195170014-0d46136b-cc88-44ad-89a1-48110057f2d3.png)
 
 ## DESCRIPTION
 
@@ -28,12 +32,6 @@ User can visit this page either on their computer or phone and can navigate the 
 
 ## Technologies
 HTML, SASS, REACT.JS
-
-
-## Screenshots
-
-Home Page
-![image]()
 
 ## Contributors
 Aniyah Butler
