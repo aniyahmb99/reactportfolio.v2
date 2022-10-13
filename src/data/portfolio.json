@@ -1,52 +1,28 @@
 {
   "portfolio": [
     {
-      "cover": "/portfolio/1/one.png",
+      "cover": "/portfolio/1/crwn.png",
       "title": "CRWN",
       "description": "React, JSX, Sass, Styled-Components, Firebase",
       "url": "https://jolly-bubblegum-09a598.netlify.app/"
     },
     {
-      "cover": "/portfolio/1/one.png",
-      "title": "CRWN",
-      "description": "React, JSX, Sass, Styled-Components, Firebase",
-      "url": "https://jolly-bubblegum-09a598.netlify.app/"
+      "cover": "/portfolio/2/forkify.png",
+      "title": "forkify",
+      "description": "HTML, SASS, JavaScript",
+      "url": "https://dreamy-entremet-020b10.netlify.app/"
     },
     {
-      "cover": "/portfolio/1/one.png",
-      "title": "CRWN",
-      "description": "React, JSX, Sass, Styled-Components, Firebase",
-      "url": "https://jolly-bubblegum-09a598.netlify.app/"
+      "cover": "/portfolio/3/bankist.png",
+      "title": "Bankist",
+      "description": "HTML, CSS, JavaScript",
+      "url": "https://aniyahmb99.github.io/bankist/"
     },
     {
-      "cover": "/portfolio/1/one.png",
-      "title": "CRWN",
-      "description": "React, JSX, Sass, Styled-Components, Firebase",
-      "url": "https://jolly-bubblegum-09a598.netlify.app/"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "CRWN",
-      "description": "React, JSX, Sass, Styled-Components, Firebase",
-      "url": "https://jolly-bubblegum-09a598.netlify.app/"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "CRWN",
-      "description": "React, JSX, Sass, Styled-Components, Firebase",
-      "url": "https://jolly-bubblegum-09a598.netlify.app/"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "CRWN",
-      "description": "React, JSX, Sass, Styled-Components, Firebase",
-      ",url": "https://jolly-bubblegum-09a598.netlify.app/"
-    },
-    {
-      "cover": "/portfolio/1/one.png",
-      "title": "CRWN",
-      "description": "React, JSX, Sass, Styled-Components, Firebase",
-      "url": "https://jolly-bubblegum-09a598.netlify.app/"
+      "cover": "/portfolio/4/taskmaster_pro.png",
+      "title": "Taskmaster Pro",
+      "description": "HTML, CSS, jQuery",
+      "url": "https://aniyahmb99.github.io/taskmaster-pro/"
     }
   ]
 }
